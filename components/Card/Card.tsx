@@ -1,27 +1,15 @@
 import styled from "styled-components";
 import { border, suits, values } from "./cards";
 import { red, black } from "tokens/colors";
+import { CardValueTypes, CardSuitTypes } from "types";
 
 type Props = {
-  suit: "hearts" | "diamonds" | "spades" | "clubs";
-  value:
-    | "A"
-    | "2"
-    | "3"
-    | "4"
-    | "5"
-    | "6"
-    | "7"
-    | "8"
-    | "9"
-    | "10"
-    | "J"
-    | "Q"
-    | "K";
+  suit: CardSuitTypes;
+  value: CardValueTypes;
   height?: number;
 };
 
-const Card: React.FC<Props> = ({ height = 60, suit, value }) => {
+const Card: React.FC<Props> = ({ height = 100, suit, value }) => {
   const svg = border + values[value] + suits[suit];
 
   return (
@@ -43,6 +31,7 @@ export default Card;
 
 const StyledSvg = styled.svg`
   height: ${(props) => props.height}px;
+  vertical-align: middle;
 
   .suit,
   .value {
