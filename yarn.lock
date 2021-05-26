@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@adamfratino/playing-cards@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@adamfratino/playing-cards/-/playing-cards-0.1.1.tgz#c3f84821a2358142f7dc8514350f6256c7c0cd6a"
+  integrity sha512-kXRZ6hryv8RK9MdaGApaq+uQkSfSsNxSg6NFHaBCOuzq54FQWM3V1Z471LbXOPhN+suq5qN5QEjayzec2cFmng==
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
